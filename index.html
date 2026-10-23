@@ -1,93 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Embedded Page</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-
-    .frame-wrap {
-      position: fixed;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
-      display: block;
-    }
-
-    /* Fallback shown only if the iframe fails / is blocked */
-    .fallback {
-      position: fixed;
-      inset: 0;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      font-family: system-ui, Arial, sans-serif;
-      background: #0f0f0f;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .fallback a {
-      margin-top: 14px;
-      padding: 12px 22px;
-      background: #29BEFD;
-      color: #000;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 600;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0; url=https://serverclass4-runx.static.hf.space">
+  <title>Redirecting…</title>
 </head>
 <body>
-  <div class="frame-wrap">
-    <iframe
-      id="appFrame"
-      src="https://soil-stolen-widely-garcia.trycloudflare.com/fm/"
-      allow="fullscreen; clipboard-read; clipboard-write"
-      allowfullscreen
-      referrerpolicy="no-referrer-when-downgrade"
-      sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-downloads allow-modals allow-top-navigation-by-user-activation">
-    </iframe>
-  </div>
-
-  <!-- Shown only if framing is blocked -->
-  <div class="fallback" id="fallback">
-    <div>The app could not be embedded (it may block iframes).</div>
-    <a href="https://soil-stolen-widely-garcia.trycloudflare.com/fm/" target="_blank" rel="noopener">
-      Open the app in a new tab
-    </a>
-  </div>
-
+  <p>Redirecting… <a href="https://serverclass4-runx.static.hf.space">Continue</a></p>
   <script>
-    // If the iframe hasn't loaded after a few seconds, show the fallback link.
-    var loaded = false;
-    var frame = document.getElementById('appFrame');
-    var fallback = document.getElementById('fallback');
-
-    frame.addEventListener('load', function () {
-      loaded = true;
-    });
-
-    setTimeout(function () {
-      if (!loaded) {
-        fallback.style.display = 'flex';
-      }
-    }, 6000);
+    window.location.replace("https://serverclass4-runx.static.hf.space");
   </script>
 </body>
 </html>
